@@ -22,8 +22,8 @@ To install and use the program, follow these steps:
 Install prerequisites: Ensure that the latest version of .NET Framework is installed on your system. 
 https://dotnet.microsoft.com/es-es/download
 
-🛠️ How to Use
-Run the R6config.exe program.
+## 🛠️ How to Use
+**Run the R6config.exe program.** 
 
 ![app Image](https://github.com/aliwwwmo/R6config/blob/main/Untitled-2.jpg)
 
