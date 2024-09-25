@@ -15,9 +15,8 @@ Additionally, with a single click, you can switch the game server and adjust the
 ## 📥 Installation
 To install and use the program, follow these steps:
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/username/repo-name.git
+1. **Download**:
+  https://github.com/aliwwwmo/R6config/releases/tag/v1.0.0
 
 Install prerequisites: Ensure that the latest version of .NET Framework is installed on your system. 
 https://dotnet.microsoft.com/es-es/download
