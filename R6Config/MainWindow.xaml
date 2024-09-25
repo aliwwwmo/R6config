@@ -1,0 +1,91 @@
+﻿<Window x:Class="R6Config.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:R6Config"
+        mc:Ignorable="d"
+        Title="R6config" Height="675" Width="1200" Icon="/assests/icon.png" >
+        
+    
+        
+         
+    <Grid Height="675" Width="1200">
+
+        <Image Source="/assests/back.jpg" />
+        <StackPanel Margin="10" HorizontalAlignment="Right" VerticalAlignment="Center" Width="Auto" Height="Auto" >
+            <Button Margin="0,40" Width="500" Height="100" Content="Change server" FontSize="40" FontWeight="Bold" Click="Button_Click">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Border Name="border" Background="Orange" CornerRadius="100,0,0,0">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#ffd265"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#555555"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+
+            <Button Margin="0,0,0,40" Width="500" Height="100" Content="MouseSensitivityMultiplierUnit" FontSize="30" FontWeight="Bold" Click="Button_Click_1">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Border Name="border" Background="Orange" CornerRadius="100,0,0,0">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#ffd265"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#555555"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <Button x:Name="freez" Margin="0,0,0,40" Width="500" Height="100" Content="Unti freez" FontSize="40" FontWeight="Bold" Click="freez_Click">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Border Name="border" Background="Orange" CornerRadius="100,0,0,0">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#ffd265"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#555555"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+        </StackPanel>
+        <StackPanel Margin="100,50" HorizontalAlignment="Right" VerticalAlignment="Bottom" Orientation="Horizontal">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Image Source="/assests/telegram-logo-png-0.png" Height="50"></Image>
+                <Label Content="aliww__channel" FontSize="20" FontWeight="Black" Foreground="White" Margin="0,10"></Label>
+            </StackPanel>
+            <StackPanel Margin="50,0" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Image Source="/assests/6359063_preview.png" Height="50"></Image>
+                <Label Content="aliwwwmo" FontSize="20" FontWeight="Black" Foreground="White" Margin="0,10"></Label>
+            </StackPanel>
+            
+        </StackPanel>
+    </Grid>
+</Window>

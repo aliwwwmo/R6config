@@ -1,0 +1,19 @@
+﻿<Window x:Class="R6Config.moussens"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:R6Config"
+        mc:Ignorable="d"
+        Title="MouseSensitivityMultiplierUnit" Height="675" Width="1200" Icon="/assests/icon.png">
+    <Grid Height="675" Width="1200">
+
+        <Image Source="/assests/bk.jpg" />
+        <StackPanel VerticalAlignment="Center">
+            <Label Content="Enter the desired sensitivity" Foreground="White" HorizontalAlignment="Center" FontSize="60"></Label>
+            <TextBox x:Name="txt_sens" HorizontalAlignment="Center" Background="Orange" Height="75" Width="558" Text="Default: 0.020000" FontSize="50" FontWeight="Medium" TextAlignment="Center"  ></TextBox>
+            <Button x:Name="btn_sens" Background="Orange" Height="50" Width="100" Content="Save" FontSize="20" Margin="20" Click="btn_sens_Click"></Button>
+        </StackPanel>
+
+    </Grid>
+</Window>

@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Window1.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="assests\6359063_preview.png" />
+    <None Remove="assests\africa.png" />
+    <None Remove="assests\asia.png" />
+    <None Remove="assests\australia.png" />
+    <None Remove="assests\back.jpg" />
+    <None Remove="assests\bk.jpg" />
+    <None Remove="assests\brazil.png" />
+    <None Remove="assests\eu.png" />
+    <None Remove="assests\globe.jpg" />
+    <None Remove="assests\globe.png" />
+    <None Remove="assests\icon.png" />
+    <None Remove="assests\japan.png" />
+    <None Remove="assests\telegram-logo-png-0.png" />
+    <None Remove="assests\uae.png" />
+    <None Remove="assests\us.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="Window1.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="assests\6359063_preview.png" />
+    <Resource Include="assests\africa.png" />
+    <Resource Include="assests\asia.png" />
+    <Resource Include="assests\australia.png" />
+    <Resource Include="assests\back.jpg" />
+    <Resource Include="assests\bk.jpg" />
+    <Resource Include="assests\brazil.png" />
+    <Resource Include="assests\eu.png" />
+    <Resource Include="assests\globe.jpg" />
+    <Resource Include="assests\globe.png" />
+    <Resource Include="assests\icon.png" />
+    <Resource Include="assests\japan.png" />
+    <Resource Include="assests\telegram-logo-png-0.png" />
+    <Resource Include="assests\uae.png" />
+    <Resource Include="assests\us.png" />
+  </ItemGroup>
+
+</Project>

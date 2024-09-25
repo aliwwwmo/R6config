@@ -1,0 +1,440 @@
+﻿<Window x:Class="R6Config.server"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:R6Config"
+        mc:Ignorable="d"
+         Title="change server" Height="675" Width="1200" Icon="/assests/icon.png">
+    <Grid Height="675" Width="1200">
+        <Image Source="/assests/bk.jpg" />
+
+        <StackPanel Background="#80000000" Height="500" Width="1000"  >
+            <Grid>
+                <StackPanel>
+                                 <StackPanel Orientation="Horizontal">
+                                 <StackPanel>
+                       
+                                <StackPanel HorizontalAlignment="Left" Margin="25,0">
+                                    <Button Margin="0,40" Width="200" Height="60" Click="Button_Click">
+
+                                        <Button.Template>
+                                            <ControlTemplate TargetType="Button">
+                                                <Grid>
+                                                    <Border Name="border" Background="Orange" CornerRadius="35">
+                                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                    </Border>
+                                                    <Ellipse Fill="#ff6c00"  Height="60" Width="60" Margin="-140,0,0,0"></Ellipse>
+
+                                                    <Image Source="/assests/globe.png"  Height="60" Width="60" Margin="-140,0,0,0"></Image>
+                                                    <Label Margin="20,0,0,0" Foreground="Black"  Content="Default"  FontSize="20" FontWeight="Bold" Height="37" Width="81"></Label>
+                                                </Grid>
+                                                <ControlTemplate.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter TargetName="border" Property="Background" Value="#ffd265"/>
+                                                    </Trigger>
+                                                    <Trigger Property="IsPressed" Value="True">
+                                                        <Setter TargetName="border" Property="Background" Value="#555555"/>
+                                                    </Trigger>
+                                                </ControlTemplate.Triggers>
+                                            </ControlTemplate>
+                                        </Button.Template>
+                                    </Button>
+                       
+                                </StackPanel>
+                                <StackPanel HorizontalAlignment="Left" Margin="25,-40">
+                                    <Button x:Name="australia" Margin="0,40" Width="200" Height="60" Click="australia_Click">
+
+                                        <Button.Template>
+                                            <ControlTemplate TargetType="Button">
+                                                <Grid>
+                                                    <Border Name="border" Background="Orange" CornerRadius="35">
+                                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                    </Border>
+                                                    <Ellipse Fill="#ff6c00"  Height="60" Width="60" Margin="-140,0,0,0"></Ellipse>
+
+                                                    <Image Source="/assests/australia.png"  Height="60" Width="60" Margin="-140,0,0,0"></Image>
+                                                    <Label Margin="59,11,-39,12" Foreground="Black"  Content="australiaeast"  FontSize="20" FontWeight="Bold" Height="37" Width="180"></Label>
+                                                </Grid>
+                                                <ControlTemplate.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter TargetName="border" Property="Background" Value="#ffd265"/>
+                                                    </Trigger>
+                                                    <Trigger Property="IsPressed" Value="True">
+                                                        <Setter TargetName="border" Property="Background" Value="#555555"/>
+                                                    </Trigger>
+                                                </ControlTemplate.Triggers>
+                                            </ControlTemplate>
+                                        </Button.Template>
+                                    </Button>
+
+                                </StackPanel>
+                                <StackPanel HorizontalAlignment="Left" Margin="25,0">
+                                    <Button x:Name="brazilso" Margin="0,40" Width="200" Height="60" Click="brazilso_Click">
+
+                                        <Button.Template>
+                                            <ControlTemplate TargetType="Button">
+                                                <Grid>
+                                                    <Border Name="border" Background="Orange" CornerRadius="35">
+                                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                    </Border>
+                                                    <Ellipse Fill="#ff6c00"  Height="60" Width="60" Margin="-140,0,0,0"></Ellipse>
+
+                                                    <Image Source="/assests/brazil.png"  Height="60" Width="60" Margin="-140,0,0,0"></Image>
+                                                    <Label Margin="59,11,-39,12" Foreground="Black"  Content="brazilsouth"  FontSize="20" FontWeight="Bold" Height="37" Width="180"></Label>
+                                                </Grid>
+                                                <ControlTemplate.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter TargetName="border" Property="Background" Value="#ffd265"/>
+                                                    </Trigger>
+                                                    <Trigger Property="IsPressed" Value="True">
+                                                        <Setter TargetName="border" Property="Background" Value="#555555"/>
+                                                    </Trigger>
+                                                </ControlTemplate.Triggers>
+                                            </ControlTemplate>
+                                        </Button.Template>
+                                    </Button>
+
+                                </StackPanel>
+
+                            </StackPanel>
+                    
+                    
+                    
+                                 <StackPanel>
+
+                                <StackPanel HorizontalAlignment="Left" Margin="25,0">
+                                    <Button x:Name="cenus" Margin="0,40" Width="200" Height="60" Click="cenus_Click_2">
+
+                                        <Button.Template>
+                                            <ControlTemplate TargetType="Button">
+                                                <Grid>
+                                                    <Border Name="border" Background="Orange" CornerRadius="35">
+                                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                    </Border>
+                                                    <Ellipse Fill="#ff6c00"  Height="60" Width="60" Margin="-140,0,0,0"></Ellipse>
+
+                                                    <Image Source="/assests/us.png"  Height="60" Width="60" Margin="-140,0,0,0"></Image>
+                                                <Label Margin="20,0,0,0" Foreground="Black"  Content="centralus"  FontSize="20" FontWeight="Bold" Height="37" Width="95"></Label>
+                                                </Grid>
+                                                <ControlTemplate.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter TargetName="border" Property="Background" Value="#ffd265"/>
+                                                    </Trigger>
+                                                    <Trigger Property="IsPressed" Value="True">
+                                                        <Setter TargetName="border" Property="Background" Value="#555555"/>
+                                                    </Trigger>
+                                                </ControlTemplate.Triggers>
+                                            </ControlTemplate>
+                                        </Button.Template>
+                                    </Button>
+
+                                </StackPanel>
+                                <StackPanel HorizontalAlignment="Left" Margin="25,-40">
+                                    <Button x:Name="eastasia" Margin="0,40" Width="200" Height="60" Click="eastasia_Click">
+
+                                        <Button.Template>
+                                            <ControlTemplate TargetType="Button">
+                                                <Grid>
+                                                    <Border Name="border" Background="Orange" CornerRadius="35">
+                                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                    </Border>
+                                                    <Ellipse Fill="#ff6c00"  Height="60" Width="60" Margin="-140,0,0,0"></Ellipse>
+
+                                                    <Image Source="/assests/asia.png"  Height="60" Width="60" Margin="-140,0,0,0"></Image>
+                                                <Label Margin="69,11,-49,12" Foreground="Black"  Content="eastasia"  FontSize="20" FontWeight="Bold" Height="37" Width="180"></Label>
+                                                </Grid>
+                                                <ControlTemplate.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter TargetName="border" Property="Background" Value="#ffd265"/>
+                                                    </Trigger>
+                                                    <Trigger Property="IsPressed" Value="True">
+                                                        <Setter TargetName="border" Property="Background" Value="#555555"/>
+                                                    </Trigger>
+                                                </ControlTemplate.Triggers>
+                                            </ControlTemplate>
+                                        </Button.Template>
+                                    </Button>
+
+                                </StackPanel>
+                                <StackPanel HorizontalAlignment="Left" Margin="25,0">
+                                    <Button x:Name="eastus" Margin="0,40" Width="200" Height="60" Click="eastus_Click">
+
+                                        <Button.Template>
+                                            <ControlTemplate TargetType="Button">
+                                                <Grid>
+                                                    <Border Name="border" Background="Orange" CornerRadius="35">
+                                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                    </Border>
+                                                    <Ellipse Fill="#ff6c00"  Height="60" Width="60" Margin="-140,0,0,0"></Ellipse>
+
+                                                    <Image Source="/assests/us.png"  Height="60" Width="60" Margin="-140,0,0,0"></Image>
+                                                <Label Margin="77,11,-57,12" Foreground="Black"  Content="eastus"  FontSize="20" FontWeight="Bold" Height="37" Width="180"></Label>
+                                                </Grid>
+                                                <ControlTemplate.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter TargetName="border" Property="Background" Value="#ffd265"/>
+                                                    </Trigger>
+                                                    <Trigger Property="IsPressed" Value="True">
+                                                        <Setter TargetName="border" Property="Background" Value="#555555"/>
+                                                    </Trigger>
+                                                </ControlTemplate.Triggers>
+                                            </ControlTemplate>
+                                        </Button.Template>
+                                    </Button>
+
+                                </StackPanel>
+
+                            </StackPanel>
+
+
+                                 <StackPanel>
+
+                                <StackPanel HorizontalAlignment="Left" Margin="25,0">
+                                    <Button x:Name="northeu" Margin="0,40" Width="200" Height="60" Click="northeu_Click">
+
+                                        <Button.Template>
+                                            <ControlTemplate TargetType="Button">
+                                                <Grid>
+                                                    <Border Name="border" Background="Orange" CornerRadius="35">
+                                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                    </Border>
+                                                    <Ellipse Fill="#ff6c00"  Height="60" Width="60" Margin="-140,0,0,0"></Ellipse>
+
+                                                    <Image Source="/assests/eu.png"  Height="60" Width="60" Margin="-140,0,0,0"></Image>
+                                                <Label Margin="62,12,-7,11" Foreground="Black"  Content="northeurope"  FontSize="20" FontWeight="Bold" Height="37" Width="145"></Label>
+                                                </Grid>
+                                                <ControlTemplate.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter TargetName="border" Property="Background" Value="#ffd265"/>
+                                                    </Trigger>
+                                                    <Trigger Property="IsPressed" Value="True">
+                                                        <Setter TargetName="border" Property="Background" Value="#555555"/>
+                                                    </Trigger>
+                                                </ControlTemplate.Triggers>
+                                            </ControlTemplate>
+                                        </Button.Template>
+                                    </Button>
+
+                                </StackPanel>
+                                <StackPanel HorizontalAlignment="Left" Margin="25,-40">
+                                    <Button x:Name="soafrica" Margin="0,40" Width="200" Height="60" Click="Button_Click_1">
+
+                                        <Button.Template>
+                                            <ControlTemplate TargetType="Button">
+                                                <Grid>
+                                                    <Border Name="border" Background="Orange" CornerRadius="35">
+                                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                    </Border>
+                                                    <Ellipse Fill="#ff6c00"  Height="60" Width="60" Margin="-140,0,0,0"></Ellipse>
+
+                                                    <Image Source="/assests/africa.png"  Height="60" Width="60" Margin="-140,0,0,0"></Image>
+                                                <Label Margin="59,11,-39,12" Foreground="Black"  Content="southafricanorth"  FontSize="15" FontWeight="Bold" Height="37" Width="180"></Label>
+                                                </Grid>
+                                                <ControlTemplate.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter TargetName="border" Property="Background" Value="#ffd265"/>
+                                                    </Trigger>
+                                                    <Trigger Property="IsPressed" Value="True">
+                                                        <Setter TargetName="border" Property="Background" Value="#555555"/>
+                                                    </Trigger>
+                                                </ControlTemplate.Triggers>
+                                            </ControlTemplate>
+                                        </Button.Template>
+                                    </Button>
+
+                                </StackPanel>
+                                <StackPanel HorizontalAlignment="Left" Margin="25,0">
+                                    <Button x:Name="sous" Margin="0,40" Width="200" Height="60" Click="sous_Click">
+
+                                        <Button.Template>
+                                            <ControlTemplate TargetType="Button">
+                                                <Grid>
+                                                    <Border Name="border" Background="Orange" CornerRadius="35">
+                                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                    </Border>
+                                                    <Ellipse Fill="#ff6c00"  Height="60" Width="60" Margin="-140,0,0,0"></Ellipse>
+
+                                                    <Image Source="/assests/us.png"  Height="60" Width="60" Margin="-140,0,0,0"></Image>
+                                                <Label Margin="59,11,-39,12" Foreground="Black"  Content="southcentralus"  FontSize="18" FontWeight="Bold" Height="37" Width="180"></Label>
+                                                </Grid>
+                                                <ControlTemplate.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter TargetName="border" Property="Background" Value="#ffd265"/>
+                                                    </Trigger>
+                                                    <Trigger Property="IsPressed" Value="True">
+                                                        <Setter TargetName="border" Property="Background" Value="#555555"/>
+                                                    </Trigger>
+                                                </ControlTemplate.Triggers>
+                                            </ControlTemplate>
+                                        </Button.Template>
+                                    </Button>
+
+                                </StackPanel>
+
+                            </StackPanel>
+
+
+                                 <StackPanel>
+
+                                <StackPanel HorizontalAlignment="Left" Margin="25,0">
+                                    <Button x:Name="uae" Margin="0,40" Width="200" Height="60" Click="uae_Click">
+
+                                        <Button.Template>
+                                            <ControlTemplate TargetType="Button">
+                                                <Grid>
+                                                    <Border Name="border" Background="Orange" CornerRadius="35">
+                                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                    </Border>
+                                                    <Ellipse Fill="#ff6c00"  Height="60" Width="60" Margin="-140,0,0,0"></Ellipse>
+
+                                                    <Image Source="/assests/uae.png"  Height="60" Width="60" Margin="-140,0,0,0"></Image>
+                                                <Label Margin="20,0,0,0" Foreground="Black"  Content="uaenorth"  FontSize="20" FontWeight="Bold" Height="37" Width="95"></Label>
+                                                </Grid>
+                                                <ControlTemplate.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter TargetName="border" Property="Background" Value="#ffd265"/>
+                                                    </Trigger>
+                                                    <Trigger Property="IsPressed" Value="True">
+                                                        <Setter TargetName="border" Property="Background" Value="#555555"/>
+                                                    </Trigger>
+                                                </ControlTemplate.Triggers>
+                                            </ControlTemplate>
+                                        </Button.Template>
+                                    </Button>
+
+                                </StackPanel>
+                                <StackPanel HorizontalAlignment="Left" Margin="25,-40">
+                                    <Button x:Name="westeu" Margin="0,40" Width="200" Height="60" Click="westeu_Click">
+
+                                        <Button.Template>
+                                            <ControlTemplate TargetType="Button">
+                                                <Grid>
+                                                    <Border Name="border" Background="Orange" CornerRadius="35">
+                                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                    </Border>
+                                                    <Ellipse Fill="#ff6c00"  Height="60" Width="60" Margin="-140,0,0,0"></Ellipse>
+
+                                                    <Image Source="/assests/eu.png"  Height="60" Width="60" Margin="-140,0,0,0"></Image>
+                                                <Label Margin="59,11,-39,12" Foreground="Black"  Content="westeurope"  FontSize="20" FontWeight="Bold" Height="37" Width="180"></Label>
+                                                </Grid>
+                                                <ControlTemplate.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter TargetName="border" Property="Background" Value="#ffd265"/>
+                                                    </Trigger>
+                                                    <Trigger Property="IsPressed" Value="True">
+                                                        <Setter TargetName="border" Property="Background" Value="#555555"/>
+                                                    </Trigger>
+                                                </ControlTemplate.Triggers>
+                                            </ControlTemplate>
+                                        </Button.Template>
+                                    </Button>
+
+                                </StackPanel>
+                                <StackPanel HorizontalAlignment="Left" Margin="25,0">
+                                    <Button x:Name="westus" Margin="0,40" Width="200" Height="60" Click="westus_Click">
+
+                                        <Button.Template>
+                                            <ControlTemplate TargetType="Button">
+                                                <Grid>
+                                                    <Border Name="border" Background="Orange" CornerRadius="35">
+                                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                    </Border>
+                                                    <Ellipse Fill="#ff6c00"  Height="60" Width="60" Margin="-140,0,0,0"></Ellipse>
+
+                                                    <Image Source="/assests/us.png"  Height="60" Width="60" Margin="-140,0,0,0"></Image>
+                                                <Label Margin="75,11,-55,12" Foreground="Black"  Content="westus"  FontSize="20" FontWeight="Bold" Height="37" Width="180"></Label>
+                                                </Grid>
+                                                <ControlTemplate.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter TargetName="border" Property="Background" Value="#ffd265"/>
+                                                    </Trigger>
+                                                    <Trigger Property="IsPressed" Value="True">
+                                                        <Setter TargetName="border" Property="Background" Value="#555555"/>
+                                                    </Trigger>
+                                                </ControlTemplate.Triggers>
+                                            </ControlTemplate>
+                                        </Button.Template>
+                                    </Button>
+
+                                </StackPanel>
+
+                            </StackPanel>
+
+
+                        </StackPanel>
+
+                    <StackPanel Margin="0,-40" HorizontalAlignment="Center" Orientation="Horizontal">
+                        <StackPanel HorizontalAlignment="Left" Margin="25,0">
+                            <Button x:Name="japan" Margin="0,40" Width="200" Height="60" Click="japan_Click">
+
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Grid>
+                                            <Border Name="border" Background="Orange" CornerRadius="35">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            </Border>
+                                            <Ellipse Fill="#ff6c00"  Height="60" Width="60" Margin="-140,0,0,0"></Ellipse>
+
+                                            <Image Source="/assests/japan.png"  Height="60" Width="60" Margin="-140,0,0,0"></Image>
+                                            <Label Margin="59,11,-39,12" Foreground="Black"  Content="japaneast"  FontSize="20" FontWeight="Bold" Height="37" Width="180"></Label>
+                                        </Grid>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="border" Property="Background" Value="#ffd265"/>
+                                            </Trigger>
+                                            <Trigger Property="IsPressed" Value="True">
+                                                <Setter TargetName="border" Property="Background" Value="#555555"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+                        </StackPanel>
+
+
+                        <StackPanel HorizontalAlignment="Left" Margin="25,0">
+                            <Button x:Name="soasia" Margin="0,40" Width="200" Height="60" Click="soasia_Click">
+
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Grid>
+                                            <Border Name="border" Background="Orange" CornerRadius="35">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            </Border>
+                                            <Ellipse Fill="#ff6c00"  Height="60" Width="60" Margin="-140,0,0,0"></Ellipse>
+
+                                            <Image Source="/assests/asia.png"  Height="60" Width="60" Margin="-140,0,0,0"></Image>
+                                            <Label Margin="59,11,-39,12" Foreground="Black"  Content="southeastasia"  FontSize="20" FontWeight="Bold" Height="37" Width="180"></Label>
+                                        </Grid>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="border" Property="Background" Value="#ffd265"/>
+                                            </Trigger>
+                                            <Trigger Property="IsPressed" Value="True">
+                                                <Setter TargetName="border" Property="Background" Value="#555555"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+                        </StackPanel>
+
+                    </StackPanel>
+                </StackPanel>
+               
+
+                
+                
+
+
+            
+            </Grid>
+        </StackPanel>
+        
+        
+
+    </Grid>
+</Window>
