@@ -22,11 +22,20 @@ https://dotnet.microsoft.com/es-es/download
 
 ## 🛠️ نحوه استفاده
 برنامه R6config.exe را اجرا کنید.
+
+
 ![app Image](https://github.com/aliwwwmo/R6config/blob/main/Untitled-2.jpg)
 در بخش change server سرور مورد نظر خودتن رو انتخاب کنید .
+
+
 ![server Image](https://github.com/aliwwwmo/R6config/blob/main/server.jpg)
 
+
+
 در بخش MouseSensitivityMultiplierUnit مقدار مورد نظر خودتون رو ( مقدار پیشنهادی : 0.002230 ) قرار بدید
+
+
 ![MouseSensitivityMultiplierUnit Image](https://github.com/aliwwwmo/R6config/blob/main/MouseSensitivityMultiplierUnit.jpg)
+
 
 هنگامی که داخل بازی فریز میشید فقط کافیه روی دکمه unti freaz بزنید تا بازی مثل قبل برای شما کار بکنه
