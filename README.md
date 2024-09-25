@@ -18,9 +18,15 @@ This project is a settings management tool for Rainbow Six. It helps users adjus
    git clone https://github.com/username/repo-name.git
 2. **نصب پیش‌نیازها**:
  مطمئن شوید که آخرین نسخه .NET Framework روی سیستم شما نصب شده است.
+https://dotnet.microsoft.com/es-es/download
 
 ## 🛠️ نحوه استفاده
-برنامه را اجرا کنید.
-در بخش تنظیمات، مقدار سنس دلخواه خود را وارد کنید.
-دکمه ذخیره را فشار دهید تا تغییرات اعمال شوند.
-برای بررسی تأثیر تغییرات، به بازی مراجعه کنید و تنظیمات جدید را امتحان کنید.
+برنامه R6config.exe را اجرا کنید.
+![app Image]([https://raw.githubusercontent.com/aliwwwmo/Onlyf/main/Untitled-1.jpg](https://github.com/aliwwwmo/R6config/blob/main/Untitled-2.jpg))
+در بخش change server سرور مورد نظر خودتن رو انتخاب کنید .
+![server Image]([https://raw.githubusercontent.com/aliwwwmo/Onlyf/main/Untitled-1.jpg](https://github.com/aliwwwmo/R6config/blob/main/server.jpg))
+
+در بخش MouseSensitivityMultiplierUnit مقدار مورد نظر خودتون رو ( مقدار پیشنهادی : 0.002230 ) قرار بدید
+![MouseSensitivityMultiplierUnit Image]([https://raw.githubusercontent.com/aliwwwmo/Onlyf/main/Untitled-1.jpg](https://github.com/aliwwwmo/R6config/blob/main/MouseSensitivityMultiplierUnit.jpg))
+
+هنگامی که داخل بازی فریز میشید فقط کافیه روی دکمه unti freaz بزنید تا بازی مثل قبل برای شما کار بکنه
