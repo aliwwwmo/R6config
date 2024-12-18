@@ -38,4 +38,4 @@ In the "MouseSensitivityMultiplierUnit" section, enter your desired value (recom
 ![MouseSensitivityMultiplierUnit Image](https://github.com/aliwwwmo/R6config/blob/main/MouseSensitivityMultiplierUnit.jpg)
 
 
-Whenever you experience freezing in the game, simply click the "unti freaz" button to get the game running smoothly again.
+Whenever you experience freezing in the game, simply click the "unti freez" button to get the game running smoothly again.
