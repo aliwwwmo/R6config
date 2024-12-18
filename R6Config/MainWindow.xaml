@@ -11,8 +11,10 @@
         
          
     <Grid Height="675" Width="1200">
-
+        
+        
         <Image Source="/assests/back.jpg" />
+        <Label x:Name="versionn" Foreground="White" Content="version: x" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="30,10" ></Label>
         <StackPanel Margin="10" HorizontalAlignment="Right" VerticalAlignment="Center" Width="Auto" Height="Auto" >
             <Button Margin="0,40" Width="500" Height="100" Content="Change server" FontSize="40" FontWeight="Bold" Click="Button_Click">
                 <Button.Template>

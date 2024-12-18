@@ -157,7 +157,7 @@ namespace R6Config {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/R6Config;component/server.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/R6Config;V1.1.0.0;component/server.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\server.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

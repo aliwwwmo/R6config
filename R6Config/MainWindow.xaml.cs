@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Diagnostics;
+using System.Reflection;
 
 
 namespace R6Config
@@ -25,6 +26,8 @@ namespace R6Config
         public MainWindow()
         {
             InitializeComponent();
+            versionn.Content = $"Version: {Assembly.GetExecutingAssembly().GetName().Version}";
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -43,7 +46,7 @@ namespace R6Config
         {
             try
             {
-                Process[] processes = Process.GetProcessesByName("RainbowSix");
+                Process[] processes = Process.GetProcessesByName("scimitar_engine_win64_2022_flto_dx12");
                 if (processes.Length > 0)
                 {
                     foreach (Process process in processes)
@@ -52,12 +55,13 @@ namespace R6Config
                         process.ProcessorAffinity = (IntPtr)1;  // CPU 0 on
                         process.ProcessorAffinity = (IntPtr)((1 << cpuCount) - 1); // All processors on
                     }
-                    MessageBox.Show("It was successful for RainbowSix");
+                    MessageBox.Show("It was successful for dx12");
                 }
                 else
                 {
-                    MessageBox.Show("RainbowSix is not running.");
+                    MessageBox.Show("dx12 is not running.");
                 }
+
 
                 Process[] processes2 = Process.GetProcessesByName("RainbowSix_BE");
                 if (processes2.Length > 0)
@@ -73,6 +77,21 @@ namespace R6Config
                 else
                 {
                     MessageBox.Show("RainbowSix_BE is not running.");
+                }
+                Process[] processes3 = Process.GetProcessesByName("scimitar_engine_win64_2022_flto_dx11");
+                if (processes3.Length > 0)
+                {
+                    foreach (Process process in processes3)
+                    {
+                        int cpuCount = Environment.ProcessorCount;
+                        process.ProcessorAffinity = (IntPtr)1;  // CPU 0 on
+                        process.ProcessorAffinity = (IntPtr)((1 << cpuCount) - 1); // All processors on
+                    }
+                    MessageBox.Show("It was successful for dx11");
+                }
+                else
+                {
+                    MessageBox.Show("dx11 is not running.");
                 }
             }
             catch
